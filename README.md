@@ -2,6 +2,8 @@
 
 A simple jQuery plugin for new feature introduction and step-by-step users guide for your website and project.
 
+![Demo screenshot](http://git.oschina.net/uploads/images/2017/0329/174117_920a5a04_568.gif "Demo screenshot")
+
 ## Build
 
 You need to install compass and coffee-script：
