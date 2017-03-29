@@ -51,8 +51,8 @@ var options = {
     }
   ]
 }
-PageIntro.init(options)
-PageIntro.start()
+PageIntro.init(options);
+PageIntro.start();
 ```
 
 ## Usage
