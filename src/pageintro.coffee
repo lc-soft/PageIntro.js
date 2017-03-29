@@ -171,12 +171,12 @@ update = ()->
   select data.step
 
 start = ()->
-  select 0
   $(window).on 'resize', update
   $container.addClass('pageintro')
   $tooltip.show()
   $overlay.show()
   $hole.show()
+  select 0
 
 finish = ()->
   $tooltip.hide()

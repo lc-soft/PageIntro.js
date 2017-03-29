@@ -212,12 +212,12 @@
   };
 
   start = function() {
-    select(0);
     $(window).on('resize', update);
     $container.addClass('pageintro');
     $tooltip.show();
     $overlay.show();
-    return $hole.show();
+    $hole.show();
+    return select(0);
   };
 
   finish = function() {
