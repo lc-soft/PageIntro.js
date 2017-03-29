@@ -23,9 +23,10 @@ var options = {
   container: 'body',
   spacing: 20,
   actions: {
-    next:
-      text: 'Next'
+    next: {
+      text: 'Next',
       class: 'your custom button class'
+    },
     finish: {
       text: 'Finish',
       class: 'your custom button class'
