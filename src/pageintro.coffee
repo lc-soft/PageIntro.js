@@ -77,7 +77,10 @@ setTooltipPosition = (position, size)->
         left: position.left - selfWidth - data.spacing
         top: position.top + (height - selfHeight) / 2
 
-      unless force
+      if force
+        if result.left < 0
+          result.left = 0
+      else
         if result.left < 0
           return false
         if result.top + selfHeight > $(window).height()
@@ -96,7 +99,10 @@ setTooltipPosition = (position, size)->
         left: position.left + size.width + data.spacing
         top: position.top + (height - selfHeight) / 2
 
-      unless force
+      if force
+        if result.left + selfWidth > $(window).width()
+          result.left = $(window).width() - selfWidth
+      else
         if result.left + selfWidth > $(window).width()
           return false
         if result.top + selfHeight > $(window).height()
@@ -113,7 +119,10 @@ setTooltipPosition = (position, size)->
         left: position.left + (size.width - selfWidth) / 2
         top: position.top - selfHeight - data.spacing
 
-      unless force
+      if force
+        if result.top < 0
+          result.top = 0
+      else
         if result.top < 0
           return false
 
@@ -126,7 +135,10 @@ setTooltipPosition = (position, size)->
         left: position.left + (size.width - selfWidth) / 2
         top: position.top + size.height + data.spacing
 
-      unless force
+      if force
+        if result.top + selfHeight > $(window).height()
+          result.top = $(window).height() - selfHeight
+      else
         if result.top + selfHeight > $(window).height()
           return false
 
