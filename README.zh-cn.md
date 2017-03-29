@@ -2,7 +2,7 @@
 
 一个简单的页面引导 jQuery 插件，可以为你的网站和项目提供新功能介绍和逐步的用户引导功能。
 
-![Demo](http://git.oschina.net/uploads/images/2017/0329/174117_920a5a04_568.gif "在这里输入图片标题")
+![Demo screenshot](http://git.oschina.net/uploads/images/2017/0329/174117_920a5a04_568.gif "Demo screenshot")
 
 ## 编译方法
 
