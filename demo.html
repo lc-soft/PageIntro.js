@@ -37,12 +37,12 @@ var options = {
       text: 'This is description'
     }, {
       selector: '#step3',
-      text: 'this is example text',
+      text: 'This is example text',
       onEnter: function () {
         $('#step3').text('Good job!');
       },
-      OnExit: function () {
-        $('#step3').text('Great job!');
+      onExit: function () {
+        $('#step3').text('This example text is changed!');
       }
     }, {
       selector: '#btn-hello',
