@@ -1,5 +1,3 @@
-# 页面引导信息插件
-
 data = {}
 defaults = {
   container: 'body'

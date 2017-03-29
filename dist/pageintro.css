@@ -1,0 +1,59 @@
+.pageintro {
+  position: relative;
+  overflow: hidden;
+}
+
+.pageintro-overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  position: absolute;
+}
+
+.pageintro-hole {
+  position: absolute;
+  border: 2px solid #2db84b;
+  border-radius: 4px;
+  box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.5);
+}
+
+.pageintro-tooltip {
+  width: 320px;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  border: 1px solid #888;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transition: all .5s;
+}
+
+.pageintro-actions {
+  text-align: center;
+}
+
+.pageintro-nav {
+  padding: 0;
+  margin: 10px 0;
+  text-align: center;
+}
+.pageintro-nav li {
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.pageintro-nav li:hover {
+  border-color: #aaa;
+  background: #ddd;
+}
+.pageintro-nav li.active {
+  border-color: #888;
+  background: #888;
+}
